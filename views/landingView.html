@@ -1,0 +1,50 @@
+<body>
+  <section class="main-section-container">
+    <img src="./images/photogLogo.png">
+    <div id="nav-toggle" class="ham" ng-click="showNav()">
+      <span></span>
+    </div>
+    <nav class="nav animated" ng-show='nav'>
+      <div id="close" class="close" ng-click="showNav()"></div>
+      <ul class="no-bullet">
+        <a ui-sref="about"><li class="nav-option">about</li></a>
+        <a><li class="nav-option nav-option2">portfolio
+          <ul>
+            <a ui-sref="travel"><li class="subset subset1">travel</li></a>
+            <a ui-sref="people"><li class="subset">people</li></a>
+            <a ui-sref="events"><li class="subset">events</li></a>
+          </ul>
+        </li></a>
+        <a ui-sref="contact"><li class="nav-option">contact</li></a>
+        <li class="heart"></li>
+      </ul>
+    </nav>
+  </section>
+
+  <a ui-sref="travel" class="travel-section-container photo-sections"><p class="desc">
+    travel
+  </p></a>
+  <a ui-sref="people" class="people-section-container photo-sections"><p class="desc">
+    people
+  </p></a>
+  <a ui-sref="events" class="event-section-container photo-sections"><p class="desc">
+    events
+  </p></a>
+
+  <section class="small-about-section-container">
+    <section class="circle-pic">
+
+    </section>
+    <p>
+      Hi! I'm Sera. I'm a photographer. I love traveling and meeting people and making friends. Even more, I love to capture those moments as a single instance, forever.
+      <br><br>
+      I don't actually exist and the picture above isn't me, but don't worry, she's a real person. All photos on this site were sourced from unsplash.com.
+    </p>
+  </section>
+  <footer class="social-media-links">
+      <img src="images/Facebook-Black-Circle-Icon.png" class="fb-icon i" alt="" />
+      <img src="images/instagram_circle.png" class="insta-icon i"  alt="" />
+      <img src="images/twitter_circle_black-512.png" class="tw-icon i"  alt="" />
+  </footer>
+
+</body>
