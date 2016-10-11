@@ -1,29 +1,41 @@
+
 @media (min-width: 360px){
   .main-section-container {
     background-position: -17.5em;
   }
+
   .people-section-container {
-    background-position: -60px;
+    // background-position: -60px;
   }
+
   .small-about-section-container {
+
     p {
       margin-bottom: 6em;
     }
+
   }
+
 }
 
 @media (min-width: 375px){
+
   .main-section-container {
     background-position: -18.5em;
   }
+
   .people-section-container {
-    background-position: -80px;
+    // background-position: -80px;
   }
+
   .small-about-section-container {
+
     p {
       margin-bottom: 4em;
     }
+
   }
+
 }
 
 @media (min-width: 412px){
@@ -31,7 +43,7 @@
     background-position: -20em;
   }
   .people-section-container {
-    background-position: -60px;
+    // background-position: -60px;
   }
   .small-about-section-container {
     p {
@@ -45,7 +57,7 @@
     background-position: -20.5em;
   }
   .people-section-container {
-    background-position: -60px;
+    // background-position: -60px;
   }
   .small-about-section-container {
     p {
@@ -55,12 +67,55 @@
 }
 
 @media (min-width: 700px){
+
   .main-section-container {
-    background-position: -22.5em;
+    background-position: 50%;
+    img {
+      height: 65px;
+      top: 30px;
+      left: 34px;
+      position: absolute;
+    }
+    #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+      height: 10px;
+      width: 59px;
+      top: 20px;
+      right: 15px;
+    }
+    #nav-toggle span:before {
+      top: -19px;
+      right: 0px;
+    }
+    #nav-toggle span:after {
+      bottom: -19px;
+      right: 0px;
+    }
+    .nav {
+      font-size: 48px;
+      .close {
+        right: 55px;
+      }
+      .close:before, .close:after {
+        height: 60px;
+        width: 12px;
+      }
+      .heart {
+        height: 40px;
+        width: 40px;
+      }
+      .heart:before,
+      .heart:after {
+        height: 40px;
+        width: 40px;
+      }
+      .heart:before {
+        top: -17px
+      }
+    }
   }
   .people-section-container {
-    background-size: 900px;
-    background-position: -60px;
+    // background-size: 900px;
+    // background-position: -60px;
   }
   .small-about-section-container {
     p {
@@ -83,10 +138,24 @@
     }
   }
   footer {
-    top: 318vh;
-    .fb-icon .insta-icon .tw-icon {
+    height: 12vh;
+    .fb-icon {
       height: 55px;
       width: 55px;
     }
+    .tw-icon {
+      height: 62px;
+      width: 62px;
+    }
+    .insta-icon {
+      height: 68px;
+      width: 68px;
+    }
+  }
+}
+
+@media (min-width: 900px){
+  #nav-toggle {
+    display: none
   }
 }

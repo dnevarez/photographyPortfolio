@@ -224,12 +224,13 @@ a {
   background: url("https://hd.unsplash.com/photo-1470506926202-05d3fca84c9a");
   background-size: cover;
   top: 175vh;
-  left: 0; }
+  left: 0;
+  height: 45vh; }
 
 .people-section-container {
   background: url("https://hd.unsplash.com/photo-1460904577954-8fadb262612c");
-  background-size: 540px;
-  background-position: -105px;
+  background-size: 110%;
+  background-position: 39% 39%;
   top: 150vh;
   height: 25vh; }
   .people-section-container .desc {
@@ -242,11 +243,9 @@ a {
 
 .small-about-section-container {
   background: #2E2A27;
-  height: 90vh;
-  width: 100%;
   left: 0;
   position: absolute;
-  top: 225vh;
+  top: 220vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -268,7 +267,7 @@ footer {
   height: 10vh;
   width: 100%;
   left: 0;
-  top: 320vh;
+  bottom: 0;
   position: absolute;
   background: #F2CFCF;
   display: flex;
@@ -289,41 +288,62 @@ footer {
 @media (min-width: 360px) {
   .main-section-container {
     background-position: -17.5em; }
-  .people-section-container {
-    background-position: -60px; }
   .small-about-section-container p {
     margin-bottom: 6em; } }
 
 @media (min-width: 375px) {
   .main-section-container {
     background-position: -18.5em; }
-  .people-section-container {
-    background-position: -80px; }
   .small-about-section-container p {
     margin-bottom: 4em; } }
 
 @media (min-width: 412px) {
   .main-section-container {
     background-position: -20em; }
-  .people-section-container {
-    background-position: -60px; }
   .small-about-section-container p {
     margin-bottom: 6em; } }
 
 @media (min-width: 414px) {
   .main-section-container {
     background-position: -20.5em; }
-  .people-section-container {
-    background-position: -60px; }
   .small-about-section-container p {
     margin-bottom: 6em; } }
 
 @media (min-width: 700px) {
   .main-section-container {
-    background-position: -22.5em; }
-  .people-section-container {
-    background-size: 900px;
-    background-position: -60px; }
+    background-position: 50%; }
+    .main-section-container img {
+      height: 65px;
+      top: 30px;
+      left: 34px;
+      position: absolute; }
+    .main-section-container #nav-toggle span, .main-section-container #nav-toggle span:before, .main-section-container #nav-toggle span:after {
+      height: 10px;
+      width: 59px;
+      top: 20px;
+      right: 15px; }
+    .main-section-container #nav-toggle span:before {
+      top: -19px;
+      right: 0px; }
+    .main-section-container #nav-toggle span:after {
+      bottom: -19px;
+      right: 0px; }
+    .main-section-container .nav {
+      font-size: 48px; }
+      .main-section-container .nav .close {
+        right: 55px; }
+      .main-section-container .nav .close:before, .main-section-container .nav .close:after {
+        height: 60px;
+        width: 12px; }
+      .main-section-container .nav .heart {
+        height: 40px;
+        width: 40px; }
+      .main-section-container .nav .heart:before,
+      .main-section-container .nav .heart:after {
+        height: 40px;
+        width: 40px; }
+      .main-section-container .nav .heart:before {
+        top: -17px; }
   .small-about-section-container p {
     margin-bottom: 6em; }
   .desc {
@@ -337,7 +357,17 @@ footer {
     font-size: 28px;
     margin-bottom: none; }
   footer {
-    top: 318vh; }
-    footer .fb-icon .insta-icon .tw-icon {
+    height: 12vh; }
+    footer .fb-icon {
       height: 55px;
-      width: 55px; } }
+      width: 55px; }
+    footer .tw-icon {
+      height: 62px;
+      width: 62px; }
+    footer .insta-icon {
+      height: 68px;
+      width: 68px; } }
+
+@media (min-width: 900px) {
+  #nav-toggle {
+    display: none; } }
