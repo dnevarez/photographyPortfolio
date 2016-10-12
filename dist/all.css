@@ -91,8 +91,10 @@ body {
   left: 3px;
   top: 0; }
 
-body {
-  position: relative; }
+html, body {
+  position: relative;
+  height: auto;
+  width: auto; }
 
 a {
   text-decoration: none;
@@ -381,17 +383,15 @@ footer {
   #nav-toggle {
     display: none; }
   .small-about-section-container {
-    height: 90vh;
     flex-flow: row;
-    justify-content: flex-end; }
+    justify-content: space-around; }
     .small-about-section-container .about-container {
       width: 50%;
       justify-content: flex-start; }
       .small-about-section-container .about-container .circle-pic {
         margin-right: 10%; }
       .small-about-section-container .about-container p {
-        font-size: 25px;
-        margin-bottom: 2em; }
+        font-size: 25px; }
     .small-about-section-container .contact-section {
       display: flex;
       justify-content: center;
