@@ -113,7 +113,8 @@ a {
     height: 40px;
     position: relative;
     top: 20px;
-    left: 22px; }
+    left: 22px;
+    z-index: 100; }
   .main-section-container .ham {
     top: 40px;
     position: absolute;
@@ -209,7 +210,9 @@ a {
     top: 0; }
 
 .main-section-container-big {
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  justify-content: center; }
   .main-section-container-big .your-class {
     height: 100vh; }
     .main-section-container-big .your-class .slick-prev {
@@ -230,15 +233,29 @@ a {
       width: 10px; }
     .main-section-container-big .your-class .slick-pic {
       height: 100vh; }
-    .main-section-container-big .your-class .pic-1 {
-      background: url("https://images.unsplash.com/photo-1476286466570-6692db3f59db?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=e8aa0f870eb659649a2ba2f74dfa252c");
-      background-size: cover; }
-    .main-section-container-big .your-class .pic-2 {
-      background: url("https://hd.unsplash.com/photo-1469173479606-ada03df615ac");
-      background-size: cover; }
-    .main-section-container-big .your-class .pic-3 {
-      background: url("https://hd.unsplash.com/photo-1429080355161-3c071e2e27a6");
-      background-size: cover; }
+  .main-section-container-big .pic-1 {
+    background-image: url("https://hd.unsplash.com/photo-1433588641602-7c1083c4f0e2");
+    background-size: cover; }
+  .main-section-container-big .pic-2 {
+    background: url("https://images.unsplash.com/photo-1476286466570-6692db3f59db?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=e8aa0f870eb659649a2ba2f74dfa252c");
+    background-size: cover; }
+  .main-section-container-big .pic-3 {
+    background: url("https://hd.unsplash.com/photo-1469173479606-ada03df615ac");
+    background-size: cover; }
+  .main-section-container-big .pic-4 {
+    background: url("https://hd.unsplash.com/photo-1429080355161-3c071e2e27a6");
+    background-size: cover; }
+  .main-section-container-big .multiple-items {
+    bottom: 13%;
+    height: 10vh;
+    width: 60%;
+    margin-left: 20%; }
+  .main-section-container-big .mini-slick-pic {
+    height: 10vh;
+    width: auto;
+    background-position: center; }
+  .main-section-container-big .slick-prev:before, .main-section-container-big .slick-next:before {
+    color: pink; }
 
 .photo-sections {
   height: 50vh;
@@ -410,6 +427,8 @@ footer {
       width: 68px; } }
 
 @media (min-width: 900px) {
+  .main-section-container-big {
+    display: block; }
   #nav-toggle {
     display: none; }
   .small-about-section-container {

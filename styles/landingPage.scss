@@ -23,6 +23,7 @@ a {
       position: relative;
       top: 20px;
       left: 22px;
+      z-index: 100;
     }
 
     .ham {
@@ -163,6 +164,9 @@ a {
 
 .main-section-container-big {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  // visibility: hidden;
 
   .your-class {
     height: 100vh;
@@ -195,23 +199,47 @@ a {
     .slick-pic {
       height: 100vh;
     }
-
-    .pic-1 {
-      background: url('https://images.unsplash.com/photo-1476286466570-6692db3f59db?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=e8aa0f870eb659649a2ba2f74dfa252c');
-      background-size: cover;
-    }
-
-    .pic-2 {
-      background: url('https://hd.unsplash.com/photo-1469173479606-ada03df615ac');
-      background-size: cover;
-    }
-
-    .pic-3 {
-      background: url('https://hd.unsplash.com/photo-1429080355161-3c071e2e27a6');
-      background-size: cover;
-    }
-
   }
+
+  //////////////////////////////////////////////////////////////////////////////
+  ////////////////// Pics for both carousels ///////////////////////////////////
+  .pic-1 {
+    background-image: url('https://hd.unsplash.com/photo-1433588641602-7c1083c4f0e2');
+    background-size: cover;
+  }
+
+  .pic-2 {
+    background: url('https://images.unsplash.com/photo-1476286466570-6692db3f59db?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=e8aa0f870eb659649a2ba2f74dfa252c');
+    background-size: cover;
+  }
+
+  .pic-3 {
+    background: url('https://hd.unsplash.com/photo-1469173479606-ada03df615ac');
+    background-size: cover;
+  }
+
+  .pic-4 {
+    background: url('https://hd.unsplash.com/photo-1429080355161-3c071e2e27a6');
+    background-size: cover;
+  }
+
+  .multiple-items {
+    bottom: 13%;
+    height: 10vh;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .mini-slick-pic {
+    height: 10vh;
+    width: auto;
+    background-position: center;
+  }
+
+  .slick-prev:before, .slick-next:before{
+    color: pink;
+  }
+
 }
 
 .photo-sections {
