@@ -161,6 +161,59 @@ a {
 
 }
 
+.main-section-container-big {
+  height: 100vh;
+
+  .your-class {
+    height: 100vh;
+
+    .slick-prev {
+      left: 25px;
+    }
+    .slick-next {
+      right: 25px;
+    }
+
+    .slick-dots {
+      bottom: 25px;
+    }
+
+    .slick-dots li.slick-active button:before {
+      background-color: pink;
+      border: 2px solid white;
+    }
+
+    .slick-dots li button:before {
+      color: transparent;
+      font-size: 11px;
+      border: 2px solid pink;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+    }
+
+    .slick-pic {
+      height: 100vh;
+    }
+
+    .pic-1 {
+      background: url('https://images.unsplash.com/photo-1476286466570-6692db3f59db?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=e8aa0f870eb659649a2ba2f74dfa252c');
+      background-size: cover;
+    }
+
+    .pic-2 {
+      background: url('https://hd.unsplash.com/photo-1469173479606-ada03df615ac');
+      background-size: cover;
+    }
+
+    .pic-3 {
+      background: url('https://hd.unsplash.com/photo-1429080355161-3c071e2e27a6');
+      background-size: cover;
+    }
+
+  }
+}
+
 .photo-sections {
   height: 50vh;
   width: 100vw;

@@ -208,6 +208,38 @@ a {
     left: 13px;
     top: 0; }
 
+.main-section-container-big {
+  height: 100vh; }
+  .main-section-container-big .your-class {
+    height: 100vh; }
+    .main-section-container-big .your-class .slick-prev {
+      left: 25px; }
+    .main-section-container-big .your-class .slick-next {
+      right: 25px; }
+    .main-section-container-big .your-class .slick-dots {
+      bottom: 25px; }
+    .main-section-container-big .your-class .slick-dots li.slick-active button:before {
+      background-color: pink;
+      border: 2px solid white; }
+    .main-section-container-big .your-class .slick-dots li button:before {
+      color: transparent;
+      font-size: 11px;
+      border: 2px solid pink;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px; }
+    .main-section-container-big .your-class .slick-pic {
+      height: 100vh; }
+    .main-section-container-big .your-class .pic-1 {
+      background: url("https://images.unsplash.com/photo-1476286466570-6692db3f59db?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=e8aa0f870eb659649a2ba2f74dfa252c");
+      background-size: cover; }
+    .main-section-container-big .your-class .pic-2 {
+      background: url("https://hd.unsplash.com/photo-1469173479606-ada03df615ac");
+      background-size: cover; }
+    .main-section-container-big .your-class .pic-3 {
+      background: url("https://hd.unsplash.com/photo-1429080355161-3c071e2e27a6");
+      background-size: cover; }
+
 .photo-sections {
   height: 50vh;
   width: 100vw;
@@ -297,14 +329,10 @@ footer {
     width: 50px; }
 
 @media (min-width: 360px) {
-  .main-section-container {
-    background-position: -17.5em; }
   .small-about-section-container p {
     margin-bottom: 6em; } }
 
 @media (min-width: 375px) {
-  .main-section-container {
-    background-position: -18.5em; }
   .small-about-section-container p {
     margin-bottom: 4em; } }
 
@@ -355,6 +383,8 @@ footer {
         width: 40px; }
       .main-section-container .nav .heart:before {
         top: -17px; }
+      .main-section-container .nav .heart:after {
+        left: 17px; }
   .small-about-section-container p {
     margin-bottom: 6em; }
   .desc {
@@ -394,19 +424,24 @@ footer {
         font-size: 25px; }
     .small-about-section-container .contact-section {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       width: 40%; }
+      .small-about-section-container .contact-section p {
+        margin-bottom: 2em;
+        margin-right: 5%; }
       .small-about-section-container .contact-section .form {
-        width: 700px;
         min-width: 406px;
         height: 350px;
         display: flex;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+        margin-bottom: 10%;
+        overflow: hidden; }
         .small-about-section-container .contact-section .form input {
           height: 10%;
-          width: 37%;
+          width: 48%;
           min-width: 187px;
-          margin-right: 1%;
+          margin-right: 1.6%;
           margin-bottom: 1%;
           background: black;
           opacity: .5;
@@ -429,7 +464,7 @@ footer {
           color: pink;
           font-family: courier; }
         .small-about-section-container .contact-section .form textarea {
-          width: 75%;
+          width: 98%;
           min-width: 380px;
           height: 75%;
           background: black;
@@ -441,4 +476,4 @@ footer {
         .small-about-section-container .contact-section .form .submit {
           margin-top: 1%;
           color: pink;
-          margin-left: 19%; } }
+          margin-left: 25%; } }
