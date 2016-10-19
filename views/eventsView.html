@@ -1,5 +1,29 @@
 <div class="event-page-container">
   <section class="event-header-section-container">
+
+
+    <a ui-sref="home" class="home-link">Home</a>
+
+    <div id="nav-toggle" class="ham" ng-click="showNav()">
+      <span></span>
+    </div>
+    <nav class="nav" ng-show='nav'>
+      <div id="close" class="close" ng-click="showNav()"></div>
+      <ul class="no-bullet">
+        <a ui-sref="about"><li class="nav-option">about</li></a>
+        <a><li class="nav-option nav-option2">portfolio
+          <ul>
+            <a ui-sref="travel"><li class="subset subset1">travel</li></a>
+            <a ui-sref="people"><li class="subset">people</li></a>
+            <a ui-sref="home"><li class="subset">home</li></a>
+          </ul>
+        </li></a>
+        <a ui-sref="contact"><li class="nav-option">contact</li></a>
+        <li class="heart"></li>
+      </ul>
+    </nav>
+
+
     <p class="desc event-desc">
       events
     </p>
@@ -7,28 +31,28 @@
 
   <section class="image">
     <img class="pic" src="https://hd.unsplash.com/photo-1472589757312-2f192d867ee2" alt="" />
-    <p>bridegroom</p>
+    <p>weddings</p>
   </section>
 
   <section class="image">
     <img class="pic" src="https://hd.unsplash.com/photo-1431308305062-f218b6fe520a" alt="" />
-    <p>rockstar</p>
+    <p>rock shows</p>
   </section>
 
   <section class="image">
-    <img class="pic" src="https://hd.unsplash.com/photo-1466150036782-869a824aeb25" alt="" />
-    <p>rock on</p>
+    <img class="pic" src="https://hd.unsplash.com/photo-1465487031582-bbc9519cc957" alt="" />
+    <p>marathons</p>
   </section>
-
+<!--
   <section class="contact">
 
-  </section>
+  </section> -->
 
 
   <p class="contact">
     contact
   </p>
 
+  <!-- <span class="mini"></span>
+  <span class="mini2"></span> -->
 </div>
-  <span class="mini"></span>
-<span class="mini2"></span>

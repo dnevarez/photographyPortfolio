@@ -1,0 +1,151 @@
+.main-people-container {
+  font-family: cursive !important;
+  background-color: black;
+  height: 100%;
+
+  .main-people-header {
+    background: url('https://images.unsplash.com/photo-1476286466570-6692db3f59db?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=e8aa0f870eb659649a2ba2f74dfa252c');
+    background-size: cover;
+    // width: 100%;
+    height: 100vh;
+
+    .desc {
+      font-family: cursive;
+    }
+  }
+
+  .ham {
+    top: 40px;
+    position: absolute;
+    right: 15px;
+  }
+
+  .close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.7;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 5px;
+    background-color: white;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+
+  #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    // border-radius: 1px;
+    height: 6px;
+    width: 30px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+    right: 10px;
+  }
+  #nav-toggle span:before {
+    top: -11px;
+    right: 0px;
+  }
+  #nav-toggle span:after {
+    bottom: -11px;
+    right: 0px;
+  }
+
+  .nav {
+    background: #F2CFCF;
+    width: 50vw;
+    right: 0px;
+    top: 0;
+    position: absolute;
+    font-family: courier;
+    color: white;
+    display: flex;
+    font-size: 24px;
+    height: 100vh;
+  }
+
+  animate.ng-show-add {
+    -webkit-animation: slideInRight 0.4s;
+  }
+
+  animate.ng-show-remove {
+    -webkit-animation: slideOutRight;
+  }
+
+  .no-bullet {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 72px 0px;
+    width: 100%;
+    height: 65vh;
+    margin: 40px 0px;
+  }
+
+  // .nav-option{
+  //   margin-bottom: 25px;
+  // }
+
+  .nav-option2 {
+    margin-top: -30px;
+  }
+
+  .subset {
+    margin-top: 10px;
+  }
+
+  .subset1 {
+    margin-top: 15px;
+  }
+
+  .heart {
+    background-color: white;
+    display: inline-block;
+    height: 20px;
+    // margin: 0 10px;
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 20px;
+    opacity: .7;
+    bottom: 40px;
+    // left: 70px;
+  }
+
+  .heart:before,
+  .heart:after {
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    height: 20px;
+    position: absolute;
+    width: 20px;
+  }
+
+  .heart:before {
+    top: -13px;
+    left: 0;
+  }
+
+  .heart:after {
+    left: 13px;
+    top: 0;
+  }
+
+}

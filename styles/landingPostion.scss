@@ -24,9 +24,6 @@
 }
 
 @media (min-width: 412px){
-  .main-section-container {
-    background-position: -20em;
-  }
 
   .small-about-section-container {
     p {
@@ -36,9 +33,7 @@
 }
 
 @media (min-width: 414px){
-  .main-section-container {
-    background-position: -20.5em;
-  }
+
 
   .small-about-section-container {
     p {
@@ -50,7 +45,7 @@
 @media (min-width: 700px){
 
   .main-section-container {
-    background-position: 50%;
+
     img {
       height: 65px;
       top: 30px;
@@ -72,7 +67,7 @@
       right: 0px;
     }
     .nav {
-      font-size: 48px;
+      font-size: 35px;
       .close {
         right: 55px;
       }

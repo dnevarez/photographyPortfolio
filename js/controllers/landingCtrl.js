@@ -1,4 +1,4 @@
-angular.module('photo').controller('landingCtrl',function($scope){
+angular.module('photo').controller('landingCtrl',function($anchorScroll, $location,$scope){
 
   $scope.showNav = () => {
     $scope.nav = !$scope.nav;
@@ -22,6 +22,20 @@ angular.module('photo').controller('landingCtrl',function($scope){
       focusOnSelect: true
     });
   })
+
+
+  $scope.gotoAnchor = function(x) {
+    // var newHash = 'anchor' + x;
+    if ($location.hash() !== x) {
+      // set the $location.hash to `newHash` and
+      // $anchorScroll will automatically scroll to it
+      $location.hash(x);
+    } else {
+      // call $anchorScroll() explicitly,
+      // since $location.hash hasn't changed
+      $anchorScroll();
+    }
+  }
 
 
 })

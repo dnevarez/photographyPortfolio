@@ -1,0 +1,42 @@
+<section class="main-people-container">
+  <section class="main-people-header">
+
+    <a ui-sref="home" class="home-link" style="font-family: cursive">Home</a>
+
+    <div id="nav-toggle" class="ham" ng-click="showNav()">
+      <span></span>
+    </div>
+    <nav class="nav" ng-show='nav'>
+      <div id="close" class="close" ng-click="showNav()"></div>
+      <ul class="no-bullet">
+        <a ui-sref="about"><li class="nav-option">about</li></a>
+        <a><li class="nav-option nav-option2">portfolio
+          <ul>
+            <a ui-sref="travel"><li class="subset subset1">travel</li></a>
+            <a ui-sref="people"><li class="subset">people</li></a>
+            <a ui-sref="home"><li class="subset">home</li></a>
+          </ul>
+        </li></a>
+        <a ui-sref="contact"><li class="nav-option">contact</li></a>
+        <li class="heart"></li>
+      </ul>
+    </nav>
+
+
+    <p class="desc">
+      people
+    </p>
+  </section>
+
+  <section style="margin-top: 20px;" ng-repeat="pic in photos">
+    <section class="image">
+      <img class="pic" src="{{pic.coverImgURL}}" alt="photographer: {{pic.photographer}} URL: {{pic.unsplashURL}}" />
+      <p>
+        {{pic.detail}}
+      </p>
+    </section>
+  </section>
+  <p class="contact">
+    contact
+  </p>
+</section>

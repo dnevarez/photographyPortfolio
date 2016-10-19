@@ -6,7 +6,7 @@ var sass = require('gulp-sass');
 var order = require('gulp-order');
 
 gulp.task('es6', function () {
-  return gulp.src(['./js/*.js'])
+  return gulp.src([ './js/*.js','./js/**/*.js'])
   .pipe(plumber())
   .pipe(babel({
     "presets": ["es2015"]

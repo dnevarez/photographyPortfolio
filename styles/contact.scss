@@ -1,0 +1,56 @@
+.contact-main-container {
+  height: 100vh;
+  background-color: #F4CAC2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: courier;
+
+  .contact-section {
+
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 70%;
+        // background: url('http://i703.photobucket.com/albums/ww40/Jessie4life007/Backgrounds%20and%20others/Cute-pink-and-brown.gif');
+
+      form {
+
+
+        section {
+          display: flex;
+          flex-direction: row;
+          width: 102%;
+
+          input {
+            width: 45%;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 1em;
+            height: 2em;
+            font-family: courier;
+            box-shadow: 1px 1px 5px black;
+          }
+          .left {
+            margin-right: 10%;
+          }
+
+        }
+        textarea {
+          width: 100%;
+          border-radius: 5px;
+          border: none;
+          font-family: courier;
+          box-shadow: 1px 1px 5px black;
+
+        }
+      }
+      input {
+        font-family: courier;
+      }
+  }
+
+
+}
