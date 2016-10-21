@@ -32,7 +32,6 @@ angular.module('photo', ['ui.router'])
   })
   .state('contact', {
     url: '/contact',
-    templateUrl: 'views/contactView.html',
-    controller: 'contactCtrl'
+    templateUrl: 'views/contactView.html'
   })
 })

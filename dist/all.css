@@ -1,6 +1,6 @@
 .contact-main-container {
-  height: 100vh;
-  background-color: #F4CAC2;
+  background: url("http://unsplash.com/photos/OpiZAxueRUE/download");
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,12 +8,27 @@
   .contact-main-container .contact-section {
     display: flex;
     flex-flow: column;
+    overflow: scroll;
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 70%; }
+    width: 70%;
+    margin-bottom: 2em; }
+    .contact-main-container .contact-section ::-webkit-input-placeholder {
+      color: pink; }
+    .contact-main-container .contact-section :-moz-placeholder {
+      /* Firefox 18- */
+      color: pink; }
+    .contact-main-container .contact-section ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: pink; }
+    .contact-main-container .contact-section :-ms-input-placeholder {
+      color: pink; }
+    .contact-main-container .contact-section .sand {
+      text-shadow: 1px 1px 2px gray;
+      color: white; }
     .contact-main-container .contact-section form {
-      opacity: .8; }
+      opacity: .6; }
       .contact-main-container .contact-section form section {
         display: flex;
         flex-direction: row;
@@ -25,7 +40,9 @@
           margin-bottom: 1em;
           height: 2em;
           font-family: courier;
-          box-shadow: 1px 1px 5px black; }
+          box-shadow: 1px 1px 5px black;
+          background-color: black;
+          color: pink; }
         .contact-main-container .contact-section form section .left {
           margin-right: 10%; }
       .contact-main-container .contact-section form textarea {
@@ -33,9 +50,13 @@
         border-radius: 5px;
         border: none;
         font-family: courier;
-        box-shadow: 1px 1px 5px black; }
+        box-shadow: 1px 1px 5px black;
+        background-color: black;
+        color: pink; }
     .contact-main-container .contact-section input {
       font-family: courier; }
+  .contact-main-container .submit {
+    color: white; }
 
 body {
   margin: 0px; }
@@ -545,34 +566,20 @@ footer {
     left: 34px;
     position: absolute; }
   .main-section-container #nav-toggle span, .main-section-container #nav-toggle span:before, .main-section-container #nav-toggle span:after {
-    height: 10px;
-    width: 59px;
-    top: 20px;
+    width: 40px;
+    top: 14px;
     right: 15px; }
   .main-section-container #nav-toggle span:before {
-    top: -19px;
+    top: -14px;
     right: 0px; }
   .main-section-container #nav-toggle span:after {
-    bottom: -19px;
+    bottom: -14px;
     right: 0px; }
-  .main-section-container .nav {
-    font-size: 35px; }
-    .main-section-container .nav .close {
-      right: 55px; }
-    .main-section-container .nav .close:before, .main-section-container .nav .close:after {
-      height: 60px;
-      width: 12px; }
-    .main-section-container .nav .heart {
-      height: 40px;
-      width: 40px; }
-    .main-section-container .nav .heart:before,
-    .main-section-container .nav .heart:after {
-      height: 40px;
-      width: 40px; }
-    .main-section-container .nav .heart:before {
-      top: -17px; }
-    .main-section-container .nav .heart:after {
-      left: 17px; }
+  .main-section-container .nav .close {
+    right: 35px; }
+  .main-section-container .nav .close:before, .main-section-container .nav .close:after {
+    height: 50px;
+    width: 8px; }
   .small-about-section-container p {
     margin-bottom: 6em; }
   .desc {

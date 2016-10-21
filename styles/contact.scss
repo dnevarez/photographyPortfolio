@@ -1,6 +1,8 @@
 .contact-main-container {
-  height: 100vh;
-  background-color: #F4CAC2;
+  // height: 100vh;
+  // background-color: #F4CAC2;
+  background: url('http://unsplash.com/photos/OpiZAxueRUE/download');
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,16 +10,38 @@
 
   .contact-section {
 
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 70%;
-        // background: url('http://i703.photobucket.com/albums/ww40/Jessie4life007/Backgrounds%20and%20others/Cute-pink-and-brown.gif');
+    display: flex;
+    flex-flow: column;
+    overflow: scroll;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    margin-bottom: 2em;
 
+      ::-webkit-input-placeholder {
+         color: pink;
+      }
+
+      :-moz-placeholder { /* Firefox 18- */
+         color: pink;
+      }
+
+      ::-moz-placeholder {  /* Firefox 19+ */
+         color: pink;
+      }
+
+      :-ms-input-placeholder {
+         color: pink;
+      }
+
+      .sand {
+        text-shadow: 1px 1px 2px gray;
+        color: white;
+      }
+      
       form {
-        opacity: .8;
+        opacity: .6;
 
         section {
           display: flex;
@@ -32,6 +56,8 @@
             height: 2em;
             font-family: courier;
             box-shadow: 1px 1px 5px black;
+            background-color: black;
+            color: pink;
           }
           .left {
             margin-right: 10%;
@@ -44,13 +70,17 @@
           border: none;
           font-family: courier;
           box-shadow: 1px 1px 5px black;
-
+          background-color: black;
+          color: pink;
         }
+
       }
       input {
         font-family: courier;
       }
   }
 
-
+  .submit {
+    color: white;
+  }
 }

@@ -52,45 +52,55 @@
       left: 34px;
       position: absolute;
     }
+
     #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-      height: 10px;
-      width: 59px;
-      top: 20px;
+      width: 40px;
+      top: 14px;
       right: 15px;
     }
+
     #nav-toggle span:before {
-      top: -19px;
+      top: -14px;
       right: 0px;
     }
+
     #nav-toggle span:after {
-      bottom: -19px;
+      bottom: -14px;
       right: 0px;
     }
+
     .nav {
-      font-size: 35px;
+
       .close {
-        right: 55px;
+        right: 35px;
       }
+
       .close:before, .close:after {
-        height: 60px;
-        width: 12px;
+        height: 50px;
+        width: 8px;
       }
-      .heart {
-        height: 40px;
-        width: 40px;
-      }
-      .heart:before,
-      .heart:after {
-        height: 40px;
-        width: 40px;
-      }
-      .heart:before {
-        top: -17px;
-      }
-      .heart:after {
-        left: 17px;
-      }
+
+      // .heart {
+      //   height: 40px;
+      //   width: 40px;
+      // }
+      //
+      // .heart:before,
+      // .heart:after {
+      //   height: 40px;
+      //   width: 40px;
+      // }
+      //
+      // .heart:before {
+      //   top: -17px;
+      // }
+      //
+      // .heart:after {
+      //   left: 17px;
+      // }
+
     }
+
   }
   .people-section-container {
     // background-size: 900px;

@@ -26,8 +26,7 @@ angular.module('photo', ['ui.router']).config(function ($stateProvider, $urlRout
     controller: 'aboutCtrl'
   }).state('contact', {
     url: '/contact',
-    templateUrl: 'views/contactView.html',
-    controller: 'contactCtrl'
+    templateUrl: 'views/contactView.html'
   });
 });
 'use strict';
