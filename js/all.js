@@ -41,9 +41,17 @@ angular.module('photo').controller('eventsCtrl', function ($scope) {
 
 angular.module('photo').controller('landingCtrl', function ($anchorScroll, $location, $scope) {
 
-  $scope.showNav = function () {
-    $scope.nav = !$scope.nav;
-  };
+  var ham = document.querySelector(".ham");
+  var close = document.querySelector(".close");
+    $scope.showNav = () => {
+      if(!$scope.nav) {
+        ham.style.zIndex = 0;
+        close.style.zIndex = 1;
+      } else {
+        ham.style.zIndex = 2;
+      };
+      $scope.nav = !$scope.nav;
+    }
 
   $(document).ready(function () {
     $('.your-class').slick({

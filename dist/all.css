@@ -316,7 +316,8 @@ a {
   .main-section-container .ham {
     top: 40px;
     position: absolute;
-    right: 15px; }
+    right: 15px;
+    z-index: 1; }
   .main-section-container .close {
     position: absolute;
     right: 32px;

@@ -1,6 +1,11 @@
 angular.module('photo').controller('landingCtrl',function($anchorScroll, $location,$scope){
-
+var ham = document.querySelector(".ham");
   $scope.showNav = () => {
+    if(!$scope.nav) {
+      ham.style.zIndex = 0;
+    } else {
+      ham.style.zIndex = 2;
+    }
     $scope.nav = !$scope.nav;
   }
 
